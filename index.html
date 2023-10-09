@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>Do you want to know your name </h3>
+    <input type="text" placeholder="Enter name" id="userInput">
+    <button onclick="checkGender()">Check</button>
+    <div id="display"></div>
+
+<script>
+      console.log(document.getElementById("display"))
+      function checkGender(){
+
+
+        var inp = userInput.value
+        if (inp == "Samuel" || inp == "Gaius" || inp == "Joshua"){
+            console.log(inp + " is a male")
+            display.innerhtml = (inp + " is a male")
+        } else if (inp == "Victoria" || inp == "Bola" || inp =="Lois"){
+            console.log(inp + " is a female")
+        } else if (inp == "testimony" || inp =="Ayo" || inp == "makinde"){
+            console.log(inp + " is a male or female")
+        } else{
+            console.log("this name does not exist")
+        }
+    }  
+</script>
+</body>
+</html>
